@@ -28,6 +28,7 @@ Register Success
     Title Should Be    Success
     Page Should Contain    Thank you for registering with us.
     Page Should Contain    We will send a confirmation to your email soon.
+    Capture Page Screenshot     Success.png
     Close Browser
 
 Register Success No Organization Info
@@ -40,6 +41,7 @@ Register Success No Organization Info
     Title Should Be    Success
     Page Should Contain    Thank you for registering with us.
     Page Should Contain    We will send a confirmation to your email soon.
+    Capture Page Screenshot     No_Organization.png
     Close Browser
 
 Empty First Name
@@ -50,6 +52,7 @@ Empty First Name
     Input Text    id=phone          ${PHONE}      
     Click Button  id=registerButton
     Page Should Contain    Please enter your first name!!
+    Capture Page Screenshot     Empty_First.png
     Close Browser
 
 Empty Last Name
@@ -60,6 +63,7 @@ Empty Last Name
     Input Text    id=phone          ${PHONE}      
     Click Button  id=registerButton     
     Page Should Contain    Please enter your last name!!
+    Capture Page Screenshot     Empty_Last.png
     Close Browser
 
 Empty First And Last Name
@@ -69,7 +73,8 @@ Empty First And Last Name
     Input Text    id=phone          ${PHONE}      
     Click Button  id=registerButton
     Page Should Contain    Please enter your name!!
-    Close Browser
+    Capture Page Screenshot     Empty_First_Last.png
+    Close Browser 
 
 Empty Email
     Open Registration Page
@@ -79,6 +84,7 @@ Empty Email
     Input Text    id=phone          ${PHONE}      
     Click Button  id=registerButton
     Page Should Contain    Please enter your email!!
+    Capture Page Screenshot     Empty_Email.png
     Close Browser
 
 Empty Phone Number
@@ -89,6 +95,7 @@ Empty Phone Number
     Input Text    id=email          ${EMAIL}      
     Click Button  id=registerButton
     Page Should Contain    Please enter your phone number!!
+    Capture Page Screenshot     Empty_Phone.png
     Close Browser
 
 Invalid Phone Number
@@ -100,6 +107,7 @@ Invalid Phone Number
     Input Text    id=phone          1234      
     Click Button  id=registerButton
     Page Should Contain    Please enter a valid phone number
+    Capture Page Screenshot     Invalid_Phone.png
     Close Browser
 
 *** Keywords ***
