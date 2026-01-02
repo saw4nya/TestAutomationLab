@@ -106,7 +106,7 @@ Invalid Phone Number
     Input Text    id=email          ${EMAIL}      
     Input Text    id=phone          1234      
     Click Button  id=registerButton
-    Page Should Contain    Please enter a valid phone number
+    Page Should Contain    Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)
     Capture Page Screenshot     Invalid_Phone.png
     Close Browser
 
